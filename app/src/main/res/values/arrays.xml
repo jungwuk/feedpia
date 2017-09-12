@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="feed_section">
+        <item>전체</item>
+        <item>젖먹이</item>
+        <item>젖뗀 돼지</item>
+        <item>육성돈 전기</item>
+        <item>육성돈 후기</item>
+        <item>비육돈</item>
+        <item>비육돈 출하</item>
+        <item>번식용 암수퇘지</item>
+        <item>임신돼지</item>
+        <item>포유돼지</item>
+    </string-array>
+</resources>

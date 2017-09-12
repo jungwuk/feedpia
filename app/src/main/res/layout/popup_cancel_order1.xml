@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_out"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+
+    >
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#f9f9f9"
+        android:gravity="center"
+
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="주문 취소"
+                android:textColor="#444444"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E0E0E0" />
+
+
+        <LinearLayout
+            android:id="@+id/cancel_order_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f9f9f9"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="정말로 구매를 취소하시겠습니까?"
+                android:textColor="#444444"
+                android:layout_marginTop="30dp"
+                android:textSize="17dp" />
+
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="30dp"
+                android:src="@drawable/close" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"
+                android:gravity="center_horizontal"
+                android:text="이미 사료 대금을 지불하신 경우,\r\n판매회사에 문의하여 환불을\r\n진행하시기 바랍니다."
+                android:lineSpacingExtra="3dp"
+                android:textColor="#F05328"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cancel_order_payment1_step1"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="정말로 구매를 취소하시겠습니까?" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이미 사료대금을 입금하셨다면, 환불을 위해 \r\n[입금확인신청]버튼을 누른 뒤 취소해주세요!"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cancel_order_payment1_step2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="정말로 구매를 취소하시겠습니까?" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- 사료대금 환불계좌 입력 -\r\n(환불신청 후, 영업일 기준 3일 이내에 환불해드립니다)"
+                android:visibility="gone" />
+
+
+            <Spinner
+                android:id="@+id/cancel_order_payment1_step2_account_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog" />
+
+            <EditText
+                android:id="@+id/cancel_order_payment1_step2_account_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="계좌번호를 입력하세요" />
+
+            <TextView
+                android:id="@+id/cancel_order_payment1_step2_attach_info"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="경영주의 신분증 사본 첨부하기" />
+
+            <TextView
+                android:id="@+id/cancel_order_payment1_step2_attach_bank"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="통장 사본 첨부하기" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/cancel_order_payment2_step1"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="정말로 구매를 취소하시겠습니까?" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- 사료대금은 환불되어 선수금으로 충전됩니다 -" />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="사료대금" />
+
+
+                <TextView
+                    android:id="@+id/cancel_order_payment2_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="1,000" />
+
+
+            </FrameLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:background="#f05328"
+                android:text="네"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/border_red"
+                android:text="아니오"
+                android:textColor="#f05328"
+                android:textSize="20dp"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

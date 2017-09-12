@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/address_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#CC2d2d2d"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+            //이미지 임시 등록
+
+            <!--<ImageView
+                android:id="@+id/address_icon"
+                android:layout_width="30dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/push_icon2"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent" />-->
+
+            <TextView
+                android:id="@+id/address_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_marginBottom="5dp"
+                android:textSize="20dp"
+                android:layout_gravity="center_horizontal"
+                android:text="안녕하세요"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/address_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여기는 농가입니다"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#e3e3e3"
+                android:layout_marginBottom="10dp"
+                android:textSize="14dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d3d3d3">
+
+    </LinearLayout>
+</LinearLayout>

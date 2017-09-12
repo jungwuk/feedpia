@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_out"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CC000000"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f9f9f9"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="70dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/main_logo2"
+
+                    />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#E0E0E0" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/main_pop_login_txt" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_box1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/main_gray_radius"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <!--
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginRight="10dp"
+                                            android:background="@drawable/main_id" />
+                    -->
+
+                    <EditText
+                        android:id="@+id/edt_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:hint="아이디"
+                        android:textSize="16dp"
+                        android:imeActionId="@+id/login"
+                        android:background="@null"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="textVisiblePassword"
+                        android:maxLines="1" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_box2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/main_gray_radius"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center">
+                    <!--
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="13dp"
+                                            android:layout_marginRight="10dp"
+                                            android:background="@drawable/main_password" />
+                    -->
+
+                    <EditText
+                        android:id="@+id/edt_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:hint="비밀번호"
+                        android:textSize="16dp"
+                        android:imeActionId="@+id/login"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:background="@null" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--  <android.support.design.widget.TextInputLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:gravity="center"
+                  android:paddingLeft="10dp"
+                  android:paddingRight="10dp">
+
+                  <EditText
+                      android:id="@+id/edt_id"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:hint="ID(아이디)"
+                      android:imeActionId="@+id/login"
+                      android:imeActionLabel="@string/action_sign_in_short"
+                      android:imeOptions="actionUnspecified"
+                      android:inputType="textVisiblePassword"
+                      android:maxLines="1"
+                      android:singleLine="true"
+                      android:background="@drawable/main_box1"
+                       />
+                  <EditText
+                      android:id="@+id/edt_pass"
+                      android:background="@drawable/main_box1_1"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:hint="Password(비밀번호)"
+                      android:imeActionId="@+id/login"
+                      android:imeActionLabel="@string/action_sign_in_short"
+                      android:imeOptions="actionUnspecified"
+                      android:inputType="textPassword"
+                      android:maxLines="1"
+
+                      android:singleLine="true" />
+                  </android.support.design.widget.TextInputLayout>-->
+
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <!-- <android.support.design.widget.TextInputLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:paddingLeft="10dp"
+                 android:paddingRight="10dp">-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="10dp"
+                android:gravity="right|center_vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_autologin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/main_checkbox2"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/main_aaa"
+                    android:visibility="gone" />
+
+
+                <CheckBox
+                    android:id="@+id/login_auto_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="로그인 상태 유지"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+
+                <ImageButton
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#0BD438"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/main_aab"
+                    android:text="로그인"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/tv_find_pw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="right"
+                    android:text="비밀번호를 분실하셨나요?"
+                    android:textColor="#F05328"/>
+
+
+                <ImageButton
+                    android:id="@+id/id_pass_lost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/main_p"
+                    android:textColor="#ffff0000"
+                    android:visibility="gone" />
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/main_line2"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" />
+
+                <!--<RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_centerVertical="true"
+                        android:background="#ff555555" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="#fff"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="또는" />
+
+                </RelativeLayout>-->
+
+
+                <!--판매자회원-->
+
+                <ImageButton
+                    android:id="@+id/btn_join_seller"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/main_orange"
+
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+
+                    android:src="@drawable/main_aac"
+                    android:text="판매자회원(사료회사) 가입하기"
+                    android:textColor="#fff"
+                    android:visibility="gone"
+
+                    />
+
+
+                <ImageButton
+                    android:id="@+id/btn_join_buyer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="#F0B731"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/main_aad"
+                    android:text="구매자회원(농가) 가입하기"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <ImageButton
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/main_close"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

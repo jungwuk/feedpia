@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:background="#FFF">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#33691E"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="다른 사료 배합"
+                android:textColor="#FFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="#8BC34A"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="급이구간"
+                    android:textColor="#FFF"
+                    android:textSize="18dp" />
+
+                <Spinner
+                    android:id="@+id/popup_feed_add_category"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/round_box2"
+                    android:entries="@array/feed_section"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/popup_feed_add_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="112dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="조회된 목록이 없습니다."
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/popup_feed_add_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="112dp"></ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/popup_feed_add_cancel"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:background="#FF8F00"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="취소"
+                android:textColor="#FFF" />
+
+            <TextView
+                android:id="@+id/popup_feed_add_ok"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#1976D2"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="선택한 상품 추가"
+                android:textColor="#FFF" />
+
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

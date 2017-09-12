@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "999348142566",
+    "firebase_url": "https://feedpia-user.firebaseio.com",
+    "project_id": "feedpia-user",
+    "storage_bucket": "feedpia-user.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999348142566:android:7c4f8083ab763f2d",
+        "android_client_info": {
+          "package_name": "com.pidpia.feedpia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "999348142566-d9e02ti6gucnokiouftcgjgkb5dqe1ct.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pidpia.feedpia",
+            "certificate_hash": "72f43bc593bdedc661391e5ed393826ea316d379"
+          }
+        },
+        {
+          "client_id": "999348142566-nv380vai55g65fkfaus527oqupsf5b9t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBudRinywzGqBdaHBEsUBmzsl5T4Fz9R3A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "999348142566-nv380vai55g65fkfaus527oqupsf5b9t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

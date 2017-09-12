@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80FFFFFF"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/map_address_search_input"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="70dp"
+                android:gravity="center_vertical"
+                android:hint="농가 주소를 입력해 주세요."
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/map_address_search_button"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:background="#76bb14"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="검색"
+                android:textColor="#FFF"
+                android:textSize="20dp" />
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/map_addres_listview"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="70dp"
+            android:layout_marginTop="70dp"
+            android:background="#80000000"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:id="@+id/map_address_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#80000000"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/map_address_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textColor="#FFF"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:text="여기가 농가의 주소입니다."
+                android:textColor="#FFF"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </FrameLayout>
+</fragment>
